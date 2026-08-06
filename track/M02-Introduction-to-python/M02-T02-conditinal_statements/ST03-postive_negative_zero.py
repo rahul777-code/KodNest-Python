@@ -1,11 +1,8 @@
-limit = int(input("Enter the number:"))
+number = 10
 
-number = 1
-total = 0
-
-while number <= limit:
-    if number % 2 == 0:
-        total = total + number
-    number = number + 1
-
-print(f"Even Sum: {total}")
+if number > 0:
+    print("Number is Positive")
+elif number < 0:
+    print("Number is Negative")
+else:
+    print("Number is Zero")
