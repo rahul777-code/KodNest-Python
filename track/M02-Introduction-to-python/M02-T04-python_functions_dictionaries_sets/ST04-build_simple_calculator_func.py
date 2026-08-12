@@ -1,16 +1,16 @@
-def calculate(first_number, second_number, operator):
-    if operator == "+":
-        return first_number + second_number
-    if operator == "-":
-        return first_number - second_number
-    if operator == "*":
-        return first_number * second_number
-    if operator == "/":
-        return first_number / second_number
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-first_number = int(input())
-second_number = int(input())
-operator = input().strip()
+title = input().strip()
+author = input().strip()
+price = int(input())
 
-result = calculate(first_number, second_number, operator)
-print(result)
+book = Book(title, author, price)
+
+print("BOOK DETAILS")
+print(f"Title: {book.title}")
+print(f"Author: {book.author}")
+print(f"Price: {book.price}")
